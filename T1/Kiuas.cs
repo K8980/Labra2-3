@@ -18,11 +18,11 @@ namespace JAMK.IT
             set
             {
                 kosteus = value;
-                if (kosteus < 0 || kosteus > 100) ;
-            }
-
-            //kommentti123
-            //joku kummentti vaa128548484
+                if (kosteus < 0 || kosteus > 100)
+                {
+                    kosteus = 0;
+                }
+            }            
         }
     }
 }
