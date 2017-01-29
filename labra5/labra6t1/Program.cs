@@ -29,7 +29,18 @@ namespace labra6t1
                 Console.WriteLine("{0}", h.ToString());
             }
             //TODO kysy käyttäjältä hetu ja haetaan sitä vastaava henkilö näytölle
-            Console.WriteLine("Syötä Hetu: ");
+             Console.WriteLine("\n Syötä henkilötunnus: ");
+            string hetu = Console.ReadLine();
+            Henkilo haettu = poppoo.HaeHenkiloHetulla(hetu);
+            Console.WriteLine();
+            if (haettu != null)
+            {
+                Console.WriteLine(haettu.ToString()); 
+            }
+            else
+            {
+                Console.WriteLine("Ei löytynyt. Better luck next time");
+            }
 
         }
     }
